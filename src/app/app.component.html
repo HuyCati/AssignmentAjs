@@ -1,45 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Learn Angular by example</h1>
+<div class="container">
+  <h1>Learn Angular by example</h1>
 
-    <!-- Ô tìm kiếm -->
-    <input type="text" [(ngModel)]="searchText" placeholder="Tìm sách..." />
+  <!-- Ô tìm kiếm -->
+  <input type="text" [(ngModel)]="searchText" placeholder="Tìm sách..." />
 
-    <h2>A list of Books</h2>
-    <div class="tableBook">
-      <ul>
-        <li *ngFor="let book of filteredBooks">
-          <div class="listBook">
+  <h2>A list of Books</h2>
+  <div class="tableBook">
+    <ul>
+      <li *ngFor="let book of filteredBooks">
+        <div class="listBook">
           <span>★ {{ book.title }}</span>
           <span class="author-badge">{{ book.author }}</span>
         </div>
-        </li>
-      </ul>
-    </div>
+      </li>
+    </ul>
+  </div>
 
-    <!-- Bộ lọc sắp xếp -->
-    <select [(ngModel)]="selectedCategory">
-      <option value="">Author Ascending</option>
-    </select>
+  <!-- Bộ lọc sắp xếp -->
+  <select [(ngModel)]="selectedCategory">
+    <option value="">Author Ascending</option>
+  </select>
 
-    <!-- Thêm sách mới -->
-    <h2>Add a new Book</h2>
-    <label>Title</label>
-    <input type="text" [(ngModel)]="newBookTitle" />
-    <label>Author</label>
-    <input type="text" [(ngModel)]="newBookAuthor" />
-    <div class="favorite">
-      <label>Favorite:</label>
+  <!-- Thêm sách mới -->
+  <h2>Add a new Book</h2>
+  <label>Title</label>
+  <input type="text" [(ngModel)]="newBookTitle" />
+  <label>Author</label>
+  <input type="text" [(ngModel)]="newBookAuthor" />
+  <div class="favorite">
+    <label>Favorite:</label>
     <input type="checkbox" [(ngModel)]="favorite" />
-    </div>
-    
+  </div>
 
-    <button (click)="addBook()" class="btn"> Add</button>
-  </body>
-</html>
+  <button (click)="addBook()" class="btn">Add</button>
+</div>

@@ -1,4 +1,4 @@
-body {
+.container {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -26,13 +26,13 @@ select {
   justify-content: space-between;
 }
 
-button {
+/* button {
   background-color: green;
   color: white;
   padding: 10px;
   border: none;
   cursor: pointer;
-}
+} */
 
 .author-badge {
   background-color: gray;
@@ -45,7 +45,7 @@ button {
 .favorite {
   max-width: 100px;
   display: flex;
-  /* justify-content: space-evenly; */
+
   align-items: center;
 }
 
@@ -54,4 +54,6 @@ button {
   border: 1px solid green;
   border-radius: 10px;
   color: white;
+  background: green;
+  padding: 10px;
 }
