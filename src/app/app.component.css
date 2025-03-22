@@ -1,0 +1,57 @@
+body {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.tableBook ul li {
+  border: 1px solid rgb(160, 160, 160);
+  padding: 5px;
+}
+
+.listBook {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.author-badge {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.favorite {
+  max-width: 100px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.btn {
+  margin-left: 100%;
+  border: 1px solid green;
+  border-radius: 10px;
+  color: white;
+}
